@@ -82,7 +82,8 @@ int main(int argc , char* argv[])
 
 
 	// some further discussion:
-	//fprintf(stderr, "This controlled malloc will be called with a size parameter of evil_size = malloc_got_address - 8 - p2_guessed\n\n");
+	//fprintf(stderr, "This controlled malloc will be called with a size parameter of \
+	//evil_size = malloc_got_address - 8 - p2_guessed\n\n");
 	//fprintf(stderr, "This because the main_arena->top pointer is setted to current av->top + malloc_size "
 	//	"and we \nwant to set this result to the address of malloc_got_address-8\n\n");
 	//fprintf(stderr, "In order to do this we have malloc_got_address-8 = p2_guessed + evil_size\n\n");
