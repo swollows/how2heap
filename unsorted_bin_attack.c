@@ -24,7 +24,8 @@ int main(){
 
 	p[1]=(unsigned long)(&stack_var-2);
 	fprintf(stderr, "Now emulating a vulnerability that can overwrite the victim->bk pointer\n");
-	fprintf(stderr, "And we write it with the target address-16 (in 32-bits machine, it should be target address-8):%p\n\n",(void*)p[1]);
+	fprintf(stderr, "And we write it with the target address-16 (in 32-bits machine, it should be target address-8):%p\n\n",
+		(void*)p[1]);
 
 	//------------------------------------
 
